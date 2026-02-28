@@ -1,6 +1,9 @@
 # azure-aks-terraform-project
 Production-style Azure DevOps implementation using Terraform for infrastructure provisioning, Docker for containerization, Azure DevOps CI/CD pipelines, and deployment to Azure Kubernetes Service (AKS)
-**Architecture Overview**
+![CI](https://github.com/skmanish519-code/azure-aks-terraform-project/actions/workflows/docker-build.yml/badge.svg)
+##  Architecture Overview
+
+```
 Developer
    ↓
 Git Push
@@ -13,7 +16,8 @@ Docker Hub Registry
    ↓
 Kubernetes Deployment
    ↓
-Horizontal Pod Autoscaler (HPA)
+Horizontal Pod Autoscaler
+```
 **Technologies Used**
 	•	Terraform – Infrastructure as Code
 	•	Docker – Containerization
