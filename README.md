@@ -88,14 +88,14 @@ The scaling behavior was tested live by generating load and observing replica ch
 	•	Sensitive data managed via Kubernetes Secret
 	•	Environment variables injected into pods securely
 ```
-## 📊 Monitoring & Observability
-
+**Monitoring & Observability**
+```
 Monitoring is implemented using:
 
 - Prometheus (metrics collection)
 - Grafana (visualization dashboard)
 - Horizontal Pod Autoscaler (CPU-based scaling)
-
+```
 **Prometheus Metrics**
 ```
 Prometheus scrapes:
