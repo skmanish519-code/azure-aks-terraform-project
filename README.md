@@ -30,6 +30,7 @@ Horizontal Pod Autoscaler
 ```
 
 **Project Structure**
+```
 azure-aks-terraform-project/
 │
  ├── terraform/              # Infrastructure as Code
@@ -46,8 +47,10 @@ Code
 │   └── docker-build.yml
 │
  └── README.md
+```
 
 **Features Implemented**
+```
 	•	Dockerized .NET application
 	•	Kubernetes Deployment & Service
 	•	ConfigMap integration for environment variables
@@ -57,20 +60,21 @@ Code
 	•	Metrics Server integration and debugging
 	•	GitHub Actions CI pipeline
 	•	Automated Docker image build and push to Docker Hub
+```
 
 **CI Pipeline (GitHub Actions)**
-
+```
 On every push to the main branch:
 	1.	Checkout repository code
 	2.	Login to Docker Hub
 	3.	Build Docker image
-  
 	4.	Push image to Docker Hub
 
 Workflow file location: .github/workflows/docker-build.yml
+```
 
 **Autoscaling Demonstration**
-
+```
 The application uses HPA with:
 	•	Target CPU utilization: 50%
 	•	Minimum replicas: 1
@@ -78,20 +82,24 @@ The application uses HPA with:
 
 The scaling behavior was tested live by generating load and observing replica changes using: **kubectl get hpa -w**
 <img width="862" height="107" alt="image" src="https://github.com/user-attachments/assets/f28da1db-c137-41f0-9325-a8b4ed61f0d8" />
-
+```
 **Configuration & Secrets**
+```
 	•	Application configuration managed via ConfigMap
 	•	Sensitive data managed via Kubernetes Secret
 	•	Environment variables injected into pods securely
+```
 **Future Enhancements**
+```
 	•	Deploy infrastructure to Azure AKS using Terraform
 	•	Integrate Azure Container Registry (ACR)
 	•	Implement full CD (automatic Kubernetes deployment)
 	•	Introduce Helm chart packaging
 	•	Add monitoring using Prometheus & Grafana
+```
 
 **Project Objective**
-
+```
 This project demonstrates real-world DevOps practices including:
 	•	Infrastructure automation
 	•	Container lifecycle management
@@ -99,4 +107,5 @@ This project demonstrates real-world DevOps practices including:
 	•	Secure configuration handling
 	•	CI pipeline automation
 	•	Application autoscaling strategy
+```
 
