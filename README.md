@@ -30,7 +30,8 @@ Horizontal Pod Autoscaler
 **Project Structure**
 azure-aks-terraform-project/
 │
-├── terraform/              # Infrastructure as Code
+ ├── terraform/              # Infrastructure as Code
+Code
 ├── docker/                 # .NET application & Dockerfile
 ├── kubernetes/             # K8s manifests
 │   ├── deployment.yaml
@@ -42,7 +43,7 @@ azure-aks-terraform-project/
 ├── .github/workflows/      # GitHub Actions CI pipeline
 │   └── docker-build.yml
 │
-└── README.md
+ └── README.md
 
 **Features Implemented**
 	•	Dockerized .NET application
