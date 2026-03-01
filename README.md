@@ -19,6 +19,7 @@ Kubernetes Deployment
 Horizontal Pod Autoscaler
 ```
 **Technologies Used**
+```
 	•	Terraform – Infrastructure as Code
 	•	Docker – Containerization
 	•	Kubernetes – Deployment & scaling
@@ -26,6 +27,7 @@ Horizontal Pod Autoscaler
 	•	ConfigMap & Secrets – Configuration management
 	•	Metrics Server – Resource monitoring
 	•	Horizontal Pod Autoscaler (HPA) – Dynamic scaling
+```
 
 **Project Structure**
 azure-aks-terraform-project/
