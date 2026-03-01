@@ -33,8 +33,7 @@ Horizontal Pod Autoscaler
 ```
 azure-aks-terraform-project/
 │
- ├── terraform/              # Infrastructure as Code
-Code
+├── terraform/              # Infrastructure as Code
 ├── docker/                 # .NET application & Dockerfile
 ├── kubernetes/             # K8s manifests
 │   ├── deployment.yaml
@@ -79,10 +78,10 @@ The application uses HPA with:
 	•	Target CPU utilization: 50%
 	•	Minimum replicas: 1
 	•	Maximum replicas: 3
-
+```
 The scaling behavior was tested live by generating load and observing replica changes using: **kubectl get hpa -w**
 <img width="862" height="107" alt="image" src="https://github.com/user-attachments/assets/f28da1db-c137-41f0-9325-a8b4ed61f0d8" />
-```
+
 **Configuration & Secrets**
 ```
 	•	Application configuration managed via ConfigMap
