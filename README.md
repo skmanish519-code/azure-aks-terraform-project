@@ -88,13 +88,37 @@ The scaling behavior was tested live by generating load and observing replica ch
 	•	Sensitive data managed via Kubernetes Secret
 	•	Environment variables injected into pods securely
 ```
+## 📊 Monitoring & Observability
+
+Monitoring is implemented using:
+
+- Prometheus (metrics collection)
+- Grafana (visualization dashboard)
+- Horizontal Pod Autoscaler (CPU-based scaling)
+
+**Prometheus Metrics**
+```
+Prometheus scrapes:
+- Application CPU usage
+- Application Memory usage
+- Kubernetes resource metrics
+```
+
+**Grafana Dashboard**
+```
+Grafana visualizes:
+- App CPU Usage (%)
+- App Memory Usage (MB)
+- Pod Restarts
+```
+<img width="1911" height="907" alt="image" src="https://github.com/user-attachments/assets/25b5aca1-251b-41fe-84d6-869526d0fdba" />
+
 **Future Enhancements**
 ```
 	•	Deploy infrastructure to Azure AKS using Terraform
 	•	Integrate Azure Container Registry (ACR)
 	•	Implement full CD (automatic Kubernetes deployment)
 	•	Introduce Helm chart packaging
-	•	Add monitoring using Prometheus & Grafana
 ```
 
 **Project Objective**
